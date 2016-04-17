@@ -1,0 +1,26 @@
+<nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+    {% if page.url == '/' %}
+      <a class="mdl-navigation__link is-active" href="index.html">লেখালেখি</a>
+    {% else %}
+      <a class="mdl-navigation__link" href="index.html">লেখালেখি</a>
+    {% endif %}
+
+    {% if page.url == '/about.html' %}
+      <a class="mdl-navigation__link is-active" href="/about.html">আমার সম্পর্কে</a>
+    {% else %}
+      <a class="mdl-navigation__link" href="/about.html">আমার সম্পর্কে</a>
+    {% endif %}
+
+    {% if page.url == '/help.html' %}
+      <a class="mdl-navigation__link is-active" href="/help.html">সহায়তা করুন</a>
+    {% else %}
+      <a class="mdl-navigation__link" href="/help.html">সহায়তা করুন</a>
+    {% endif %}
+
+    {% if page.url == '/contact.html' %}
+      <a class="mdl-navigation__link is-active" href="/contact.html">যোগাযোগ</a>
+    {% else %}
+      <a class="mdl-navigation__link" href="/contact.html">যোগাযোগ</a>
+    {% endif %}
+
+</nav>
