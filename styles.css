@@ -11,10 +11,14 @@
 }
 
 .mdl-layout__title {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", kalpurush, serif;
   font-size: 20px;
   text-align: center;
 
+}
+
+.mdl-logo{
+  font-family: "Georgia", kalpurush, serif;
 }
 
 .is-compact .mdl-layout__title span {
@@ -56,7 +60,7 @@
 }
 
 .portfolio-navigation-row .mdl-navigation__link {
-  font-family: kalpurush;
+  font-family: "Georgia", kalpurush, serif;
   font-size: 22px;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -167,7 +171,7 @@ img.article-image {
 }
 
 footer {
-  background-image: url(images/footer-background.png);
+  background-color: #f9f7f1;
   background-size: cover;
 }
 
