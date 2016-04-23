@@ -3,7 +3,7 @@ title:               লেখালেখি
 tagline:
 url:                 http://syedabdalahmed.com
 paginate:            6
-baseurl:             ""
+baseurl:             "/"
 
 # About/contact
 author:

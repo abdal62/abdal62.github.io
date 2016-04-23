@@ -185,6 +185,10 @@ p#abdalDesc{
   border:2px solid #fff;
 }
 
+.mdl-card__title.mdl-card__subtitle-text{
+  font-family: 'Roboto', kalpurush;
+}
+
 img.article-image {
   width: 100%;
   height: auto;
