@@ -161,6 +161,14 @@ img.article-image {
     display: flex;
 }
 
+a.pagination-item{
+  text-decoration: initial;
+}
+
+.pagination{
+  margin-left: 42%;
+}
+
 .portfolio-contact .mdl-textfield {
   width: 100%;
 }

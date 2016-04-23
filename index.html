@@ -24,15 +24,32 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
 
     <div class="pagination">
       {% if paginator.next_page %}
-        <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+      <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          পুরোনো লেখা
+        </button>
+      </a>
       {% else %}
-        <span class="pagination-item older">Older</span>
+        <span class="pagination-item older">
+          <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+            পুরোনো লেখা
+          </button>
+        </span>
       {% endif %}
       {% if paginator.previous_page %}
-        <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+        <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            নতুন লেখা
+          </button>
+        </a>
       {% else %}
-        <span class="pagination-item newer">Newer</span>
+        <span class="pagination-item newer">
+          <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+            নতুন লেখা
+          </button>
+        </span>
       {% endif %}
     </div>
+    <br>
     {% include footer.html %}
 </main>
