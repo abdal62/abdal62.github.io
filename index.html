@@ -8,16 +8,16 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
         <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
             <div class="mdl-card__media">
                 {% if post.feature_image_path == nil %}
-                <img class="article-image" src="{{site.baseurl}}/images/about-header.jpg" border="0" alt="">
+                <img class="article-image" src="{{site.baseurl}}images/about-header.jpg" border="0" alt="">
                 {% else %}
-                <img class="article-image" src="{{site.baseurl}}/images/{{post.feature_image_path}}" border="0" alt="">
+                <img class="article-image" src="{{site.baseurl}}images/{{post.feature_image_path}}" border="0" alt="">
                 {% endif %}
             </div>
             <div>
               {% if post.category == "পাখির চোখে দেখা" %}
-              <img id="categoryImage" src="{{site.baseurl}}/images/pakhir-chokhe.png"/>
+              <img id="categoryImage" src="{{site.baseurl}}images/pakhir-chokhe.png"/>
               {% else %}
-              <img id="categoryImage" src="{{site.baseurl}}/images/about-header.jpg"/>
+              <img id="categoryImage" src="{{site.baseurl}}images/about-header.jpg"/>
               {% endif %}
             </div>
             <div class="mdl-card__title">
@@ -44,7 +44,7 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
 
     <div class="pagination">
       {% if paginator.next_page %}
-      <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">
+      <a class="pagination-item older" href="{{ paginator.next_page_path }}">
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
           পুরোনো লেখা
         </button>
@@ -57,7 +57,7 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
         </span>
       {% endif %}
       {% if paginator.previous_page %}
-        <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">
+        <a class="pagination-item newer" href="{{ paginator.previous_page_path }}">
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
             নতুন লেখা
           </button>
