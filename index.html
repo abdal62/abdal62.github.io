@@ -16,8 +16,8 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
             <div>
               {% if post.category == "পাখির চোখে দেখা" %}
               <img id="categoryImage" src="{{site.baseurl}}images/pakhir-chokhe.png"/>
-              {% else %}
-              <img id="categoryImage" src="{{site.baseurl}}images/about-header.jpg"/>
+              {% else if post.category == "সাক্ষাত্কার" %}
+              <img id="categoryImage" src="{{site.baseurl}}images/interview.png"/>
               {% endif %}
             </div>
             <div class="mdl-card__title">
