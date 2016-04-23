@@ -1,0 +1,16 @@
+# Setup
+title:               লেখালেখি
+tagline:
+url:                 http://syedabdalahmed.com
+paginate:            6
+baseurl:             ""
+
+# About/contact
+author:
+  name:              Syed Abdal Ahmed
+  email:             abdal62@gmail.com
+
+
+# Gems
+gems:
+  - jekyll-paginate
