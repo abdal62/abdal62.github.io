@@ -87,6 +87,14 @@
   line-height: 42px;
 }
 
+.mdl-navigation__link{
+  font-family: 'Roboto', kalpurush;
+}
+
+.mdl-navigation__link .is-active{
+  font-family: 'Roboto', kalpurush;
+}
+
 .portfolio-header .mdl-layout__drawer-button {
     background-color: rgba(197, 197, 197, 0.44);
 }
@@ -148,12 +156,31 @@ button#share{
   left: 50%;
 }
 
+h3#abdalName{
+  font-family: 'Roboto', kalpurush;
+}
+
+p#abdalDesc{
+  font-family: 'Roboto', kalpurush;
+  font-size: 16px;
+}
+
 #categoryImage{
   width: 20%;
   height: 20%;
   position: relative;
   margin-top: -35%;
   margin-left: 4%;
+  border-radius: 50%;
+  border:2px solid #fff;
+}
+
+#abdalProfileImage{
+  width: 20%;
+  height: 20%;
+  position: relative;
+  margin-top: -35%;
+  margin-left: 5%;
   border-radius: 50%;
   border:2px solid #fff;
 }
