@@ -7,16 +7,22 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
         {% for post in paginator.posts %}
         <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
             <div class="mdl-card__media">
-                <img class="article-image" src=" images/example-work01.jpg" border="0" alt="">
+                <img class="article-image" src=" images/example-blog01.jpg" border="0" alt="">
+            </div>
+            <div>
+              <img id="categoryImage" src="images/pakhir-chokhe.png"/>
             </div>
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">{{ post.title }}</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                {{post.excerpt}}
             </div>
             <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ post.url }}">Read more</a>
+                <a id="readMore"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ post.url }}">আরও পড়ুন</a>
+                <button id="share" class="mdl-button mdl-button--icon mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">share</i>
+                </button>
             </div>
         </div>
         {% endfor %}

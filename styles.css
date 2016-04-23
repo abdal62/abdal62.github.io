@@ -17,7 +17,17 @@
 
 }
 
-.mdl-logo{
+.mdl-cell > .mdl-card__menu {
+  color: #eeeee;
+}
+
+
+.mdl-button{
+  font-family: 'Roboto', kalpurush;
+  font-weight: bold;
+}
+
+.mdl-logo {
   font-family: 'Roboto', kalpurush;
 }
 
@@ -27,6 +37,15 @@
 
 .portfolio-logo-row {
   min-height: 200px;
+}
+
+.mdl-card__title-text{
+  font-family: 'Roboto', kalpurush;
+  padding-top: 0px;
+}
+
+.mdl-card__supporting-text{
+  font-family: 'Roboto', kalpurush;
 }
 
 .is-compact .portfolio-logo-row {
@@ -91,6 +110,7 @@
 
 .portfolio-card .mdl-card__title {
   padding-bottom: 0;
+  padding-top: 0;
 }
 
 .portfolio-blog-card-full-bg {
@@ -113,6 +133,29 @@
   height: 52px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
+}
+
+div.mdl-card__actions.mdl-card--border{
+  display: table-row;
+}
+
+a#readMore{
+  right: 3%;
+
+}
+
+button#share{
+  left: 50%;
+}
+
+#categoryImage{
+  width: 20%;
+  height: 20%;
+  position: relative;
+  margin-top: -35%;
+  margin-left: 4%;
+  border-radius: 50%;
+  border:2px solid #fff;
 }
 
 img.article-image {
