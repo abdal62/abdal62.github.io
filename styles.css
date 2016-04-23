@@ -11,14 +11,14 @@
 }
 
 .mdl-layout__title {
-  font-family: Roboto, kalpurush;
+  font-family: 'Roboto', kalpurush;
   font-size: 20px;
   text-align: center;
 
 }
 
 .mdl-logo{
-  font-family: Roboto, kalpurush;
+  font-family: 'Roboto', kalpurush;
 }
 
 .is-compact .mdl-layout__title span {
@@ -60,7 +60,7 @@
 }
 
 .portfolio-navigation-row .mdl-navigation__link {
-  font-family: Roboto, kalpurush;
+  font-family: 'Roboto', kalpurush;
   font-size: 22px;
   -webkit-flex: 1;
       -ms-flex: 1;
