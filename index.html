@@ -8,16 +8,16 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
         <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
             <div class="mdl-card__media">
                 {% if post.feature_image_path == nil %}
-                <img class="article-image" src="{{site.baseurl}}images/about-header.jpg" border="0" alt="">
+                <img class="article-image" href="{{ post.url }}" src="{{site.baseurl}}images/about-header.jpg" border="0" alt="">
                 {% else %}
-                <img class="article-image" src="{{site.baseurl}}images/{{post.feature_image_path}}" border="0" alt="">
+                <img class="article-image" href="{{ post.url }}" src="{{site.baseurl}}images/{{post.feature_image_path}}" border="0" alt="">
                 {% endif %}
             </div>
             <div>
               {% if post.category == "পাখির চোখে দেখা" %}
-              <img id="categoryImage" src="{{site.baseurl}}images/pakhir-chokhe.png"/>
+              <img id="categoryImage" href="{{ post.url }}" src="{{site.baseurl}}images/pakhir-chokhe.png"/>
               {% else if post.category == "সাক্ষাত্কার" %}
-              <img id="categoryImage" src="{{site.baseurl}}images/interview.png"/>
+              <img id="categoryImage" href="{{ post.url }}" src="{{site.baseurl}}images/interview.png"/>
               {% endif %}
             </div>
             <div class="mdl-card__title">
@@ -33,11 +33,15 @@ title: লেখালেখি | সৈয়দ আবদাল আহমদ | �
               {{post.bengali_date}}
             </div>
             <div class="mdl-card__actions mdl-card--border">
-                <a id="readMore"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ post.url }}">আরও পড়ুন</a>
+              <div id="postButtons">
+                <a id="readMore"class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="{{ post.url }}">আরও পড়ুন</a>
+                <div id="facebookButtons"class="fb-like" data-href="{{ post.url }}" data-layout="box_count" data-action="like" data-show-faces="false" data-share="true"></div>
+              </div>
             </div>
         </div>
         {% endfor %}
     </div>
+
 
     <div class="pagination">
       {% if paginator.next_page %}

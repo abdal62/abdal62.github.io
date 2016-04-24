@@ -233,6 +233,12 @@ p#abdalDesc{
   font-family: 'Roboto', kalpurush;
 }
 
+div#postButtons{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
 
 #categoryImage{
   width: 20%;
