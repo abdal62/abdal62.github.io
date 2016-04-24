@@ -43,7 +43,6 @@ div#disqusPlugin{
   color: #eeeee;
 }
 
-
 .mdl-button{
   font-family: 'Roboto', kalpurush;
   font-weight: bold;
@@ -189,6 +188,7 @@ h1#postTitleText{
   left: 15%;
 }
 
+
 .portfolio-card .mdl-card__title {
   padding-bottom: 0;
   padding-top: 0;
@@ -244,6 +244,50 @@ div#postButtons{
   margin-left: 4%;
   border-radius: 50%;
   border:2px solid #fff;
+}
+
+.fb-like{
+  overflow: visible;
+}
+
+.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect{
+  overflow: visible;
+}
+
+.mdl-card__actions.mdl-card--border{
+  overflow: visible;
+}
+
+.mdl-card__title.mdl-card__subtitle-text{
+  overflow: visible;
+}
+
+.mdl-card__supporting-text{
+  overflow: visible;
+}
+
+.mdl-card__title.mdl-card__subtitle-text{
+  overflow: visible;
+}
+
+.mdl-card__title-text{
+  overflow: visible;
+}
+
+.mdl-card__title{
+  overflow: visible;
+}
+
+.article-image{
+  overflow: visible;
+}
+
+.mdl-card__media{
+  overflow: visible;
+}
+
+.mdl-cell.mdl-cell--12-col.mdl-card.mdl-shadow--4dp{
+  overflow: visible;
 }
 
 #abdalProfileImage{
