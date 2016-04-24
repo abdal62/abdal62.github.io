@@ -1,7 +1,8 @@
 # Setup
 title:               লেখালেখি
 tagline:             সৈয়দ আবদাল আহমদ | সাংবাদিক ও কলামিস্ট
-url:                 http://syedabdalahmed.com
+url:                 https://www.syedabdalahmed.com
+enforce_ssl:         www.syedabdalahmed.com
 paginate:            6
 paginate_path:       "/lekhalekhi/page:num/"
 baseurl:             "/"
