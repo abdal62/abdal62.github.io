@@ -123,6 +123,12 @@ div#postAuthor{
   margin-right: auto;
 }
 
+div#pageContentText.mdl-grid.portfolio-copy h2{
+  font-family: 'Roboto', kalpurush;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
 div#pageContentText.mdl-grid.portfolio-copy p{
   font-family: 'Roboto', kalpurush;
   font-size: 18px;
