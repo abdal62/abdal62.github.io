@@ -229,10 +229,6 @@ p#abdalDesc{
   font-family: 'Roboto', kalpurush;
 }
 
-* {
-  font-family: 'Roboto', kalpurush;
-}
-
 div#postButtons{
   display: -webkit-flex;
   display: flex;
