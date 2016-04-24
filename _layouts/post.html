@@ -58,5 +58,12 @@ layout: default
       {% endif %}
     </div>
     <br>
+    <div class="mdl-grid portfolio-max-width">
+        <div id="disqusPlugin" class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+          {% if page.comments %}
+            <div class="fb-comments" data-href={{site.url}}{{page.url}} data-numposts="5" data-width="100%"></div>
+          {% endif %}
+        </div>
+      </div>
     {% include footer.html %}
 </main>

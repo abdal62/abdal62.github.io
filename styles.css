@@ -17,6 +17,10 @@
 
 }
 
+div#disqusPlugin{
+  padding: 5%;
+}
+
 .PageNavigation {
   font-size: 14px;
   display: block;
@@ -212,19 +216,6 @@ h1#postTitleText{
   background: rgba(0, 0, 0, 0.2);
 }
 
-div.mdl-card__actions.mdl-card--border{
-  display: table-row;
-}
-
-a#readMore{
-  right: 3%;
-
-}
-
-button#share{
-  left: 50%;
-}
-
 h3#abdalName{
   font-family: 'Roboto', kalpurush;
 }
@@ -233,6 +224,15 @@ p#abdalDesc{
   font-family: 'Roboto', kalpurush;
   font-size: 16px;
 }
+
+.fb-comments{
+  font-family: 'Roboto', kalpurush;
+}
+
+* {
+  font-family: 'Roboto', kalpurush;
+}
+
 
 #categoryImage{
   width: 20%;
