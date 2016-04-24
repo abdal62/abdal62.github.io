@@ -13,7 +13,9 @@ layout: default
             <div id="postAuthor" class="mdl-card__title">
                 <h3 id="postAuthorText"class="mdl-card__title-text">সৈয়দ আবদাল আহমদ</h3>
             </div>
-
+            <div id="postDate" class="mdl-card__title mdl-card__subtitle-text">
+              {{page.bengali_date}}
+            </div>
             <div class="mdl-card__media">
               {% if page.feature_image_path == nil %}
               <img class="article-image" src="{{site.baseurl}}images/about-header.jpg" border="0" alt="">
@@ -21,11 +23,40 @@ layout: default
               <img class="article-image" src="{{site.baseurl}}images/{{page.feature_image_path}}" border="0" alt="">
               {% endif %}
             </div>
-
             <div id="pageContentText" class="mdl-grid portfolio-copy">
                 <p id="pageContentText">{{page.content}}</p>
             </div>
         </div>
     </div>
+
+    <div class="pagination">
+      {% if page.previous.url %}
+        <a class="pagination-item older" href="{{page.previous.url}}">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            পুরোনো লেখা
+          </button>
+        </a>
+      {% else %}
+        <span class="pagination-item older">
+          <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+            পুরোনো লেখা
+          </button>
+        </span>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="pagination-item newer" href="{{page.next.url}}">
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+            নতুন লেখা
+          </button>
+        </a>
+      {% else %}
+        <span class="pagination-item newer">
+          <button class="mdl-button mdl-js-button mdl-button--raised" disabled>
+            নতুন লেখা
+          </button>
+        </span>
+      {% endif %}
+    </div>
+    <br>
     {% include footer.html %}
 </main>

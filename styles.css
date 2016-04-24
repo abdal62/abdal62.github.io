@@ -17,6 +17,24 @@
 
 }
 
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.PageNavigation .next {
+  text-align: right;
+}
+
 .mdl-cell > .mdl-card__menu {
   color: #eeeee;
 }
@@ -123,10 +141,12 @@ div#postAuthor{
   margin-right: auto;
 }
 
-div#pageContentText.mdl-grid.portfolio-copy h2{
+div#pageContentText.mdl-grid.portfolio-copy h3{
   font-family: 'Roboto', kalpurush;
   font-size: 18px;
   font-weight: bolder;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 div#pageContentText.mdl-grid.portfolio-copy p{
@@ -140,6 +160,13 @@ h3#postAuthorText{
   font-size: 18px;
   margin-left: auto;
   margin-right: auto;
+}
+
+div#postDate{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 h1#postTitleText{

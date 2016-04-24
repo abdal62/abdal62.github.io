@@ -1,26 +1,26 @@
 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-    {% if page.url == '/' or page.url contains "/lekhalekhi" %}
-      <a class="mdl-navigation__link is-active" href="index.html">লেখালেখি</a>
+    {% if page.url == {{site.baseurl}} or page.url contains "/lekhalekhi" %}
+      <a class="mdl-navigation__link is-active" href="{{site.baseurl}}index.html">লেখালেখি</a>
     {% else %}
-      <a class="mdl-navigation__link" href="index.html">লেখালেখি</a>
+      <a class="mdl-navigation__link" href="{{site.baseurl}}index.html">লেখালেখি</a>
     {% endif %}
 
-    {% if page.url == '/about.html' %}
-      <a class="mdl-navigation__link is-active" href="/about.html">আমার সম্পর্কে</a>
+    {% if page.url contains "/about" %}
+      <a class="mdl-navigation__link is-active" href="{{site.baseurl}}about.html">আমার সম্পর্কে</a>
     {% else %}
-      <a class="mdl-navigation__link" href="/about.html">আমার সম্পর্কে</a>
+      <a class="mdl-navigation__link" href="{{site.baseurl}}about.html">আমার সম্পর্কে</a>
     {% endif %}
 
-    {% if page.url == '/supportme.html' %}
-      <a class="mdl-navigation__link is-active" href="/supportme.html">সহায়তা করুন</a>
+    {% if page.url contains "/supportme" %}
+      <a class="mdl-navigation__link is-active" href="{{site.baseurl}}supportme.html">সহায়তা করুন</a>
     {% else %}
-      <a class="mdl-navigation__link" href="/supportme.html">সহায়তা করুন</a>
+      <a class="mdl-navigation__link" href="{{site.baseurl}}supportme.html">সহায়তা করুন</a>
     {% endif %}
 
-    {% if page.url == '/contact.html' %}
-      <a class="mdl-navigation__link is-active" href="/contact.html">যোগাযোগ</a>
+    {% if page.url contains "/contact" %}
+      <a class="mdl-navigation__link is-active" href="{{site.baseurl}}contact.html">যোগাযোগ</a>
     {% else %}
-      <a class="mdl-navigation__link" href="/contact.html">যোগাযোগ</a>
+      <a class="mdl-navigation__link" href="{{site.baseurl}}contact.html">যোগাযোগ</a>
     {% endif %}
 
 </nav>

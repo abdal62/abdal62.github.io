@@ -5,6 +5,7 @@ url:                 http://syedabdalahmed.com
 paginate:            6
 paginate_path:       "/lekhalekhi/page:num/"
 baseurl:             "/"
+permalink:           /lekhalekhi/:title
 
 # About/contact
 author:
